@@ -45,6 +45,7 @@ function createFormListener() {
         function successCallback(response) {
             // This data comes from the resolve method
             addMessageToThread(response);
+            window.location.reload();
         }
 
         function errorCallback(response) {
